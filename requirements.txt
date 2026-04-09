@@ -1,0 +1,8 @@
+# GPU backend (reli_turbo)
+cupy-cuda12x>=13.0
+numpy>=1.24
+scipy>=1.10
+
+# Pipeline scripts
+pandas>=1.5
+matplotlib>=3.6

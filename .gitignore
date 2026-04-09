@@ -1,0 +1,25 @@
+# Track only pipeline code, packaging, Dockerfiles, and data
+*
+!.gitignore
+!Dockerfile.cpp
+!Dockerfile.gpu
+!README.md
+!LICENSE
+!pyproject.toml
+!setup.py
+!requirements.txt
+!scripts/
+!scripts/extract_inputs.py
+!scripts/extract_inputs_deseq2.py
+!scripts/extract_inputs_database.py
+!scripts/build_null_model.py
+!scripts/run_reli.sh
+!scripts/parse_results.py
+!scripts/plot_figure.py
+!scripts/plot_lollipop.py
+!reli_turbo/
+!reli_turbo/*.py
+!data/
+!data/**
+!RELI/
+!RELI/**

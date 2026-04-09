@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reli-turbo"
+version = "0.1.0"
+description = "GPU-accelerated RELI permutation testing for RBP enrichment analysis"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+dependencies = [
+    "cupy-cuda12x>=13.0",
+    "numpy>=1.24",
+    "scipy>=1.10",
+]
+
+[project.scripts]
+reli-turbo = "reli_turbo.cli:main"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov",
+]
+
+[tool.setuptools.packages.find]
+include = ["reli_turbo*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
